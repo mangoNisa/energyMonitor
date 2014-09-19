@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="440" android:versionName="4.4.0" package="com.actionbarsherlock.sample.demos">
+
+    <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="17"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <application android:icon="@drawable/icon" android:label="NRG Monitor" android:theme="@android:style/Theme.Holo.Light">
+
+        <activity android:label="@string/activity_name" android:name=".TabNavigation" android:screenOrientation="portrait">
+      
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>    
+
+        <activity android:label="@string/tab_navigation_collapsed" android:name=".TabNavigationCollapsed" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.actionbarsherlock.sample.demos.EXAMPLE"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
